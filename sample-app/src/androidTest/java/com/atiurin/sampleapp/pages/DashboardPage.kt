@@ -1,16 +1,13 @@
 package com.atiurin.sampleapp.pages
 
 import android.view.View
-import androidx.test.espresso.Espresso.onView
-import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withContentDescription
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import com.atiurin.sampleapp.R
 import org.hamcrest.Matcher
 import org.hamcrest.Matchers
-import java.util.EnumSet.allOf
-import java.util.regex.Pattern.matches
+
 
 object DashboardPage {
 

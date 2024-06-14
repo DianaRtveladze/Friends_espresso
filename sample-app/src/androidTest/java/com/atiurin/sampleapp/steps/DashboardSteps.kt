@@ -7,8 +7,10 @@ import org.junit.Assert
 
 object DashboardSteps {
     fun assertDashboardIsLoaded() {
-        with(DashboardPage) { Assert.assertTrue(drawerLayout.isViewDisplayed() &&
-                        recyclerFriends.isViewDisplayed()
+        with(DashboardPage) {
+            Assert.assertTrue(
+                drawerLayout.isViewDisplayed() &&
+                    recyclerFriends.isViewDisplayed()
             )
         }
     }
@@ -18,5 +20,4 @@ object DashboardSteps {
     fun openChatWithFriend(name: String) {
         DashboardPage.friendWithName(name).tap()
     }
-
 }
