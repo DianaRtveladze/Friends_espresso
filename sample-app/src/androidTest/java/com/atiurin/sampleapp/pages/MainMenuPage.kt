@@ -9,7 +9,8 @@ import org.hamcrest.Matchers
 object MainMenuPage {
 
     fun menuItem(itemName: String): Matcher<View> {
-        return Matchers.allOf(ViewMatchers.withId(R.id.design_menu_item_text),
+        return Matchers.allOf(
+            ViewMatchers.withId(R.id.design_menu_item_text),
             ViewMatchers.withText(itemName)
         )
     }
